@@ -17,7 +17,7 @@
     <a href="#introduction">Introduction</a> •
     <a href="#installation">Installation</a> •
     <a href="#quickstart">Quickstart</a> •
-    <a hred="#instructions">Instructions</a> •
+    <a href="#instructions">Instructions</a> •
     <a href="#citation">Citation</a> •
     <a href="#acknowledgments">Acknowledgments</a> •
     <a href="#license">License</a>
