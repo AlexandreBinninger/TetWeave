@@ -1,0 +1,3 @@
+# Data
+
+This folder only contains one test example for quickstart. Our dataset has been sourced from [https://threedscans.com/](https://threedscans.com/) and processed to keep the principal connected component and to filter watertight meshes. You can find our preprocessed dataset [here](https://drive.google.com/file/d/1e_W2qbtrmV3bxohJhJcqYQJzeGngRXG0/view?usp=sharing), or simply run `python download_evaluation_dataset.py` at the root of the repository to automatically download and unzip the folder.

@@ -1,0 +1,101 @@
+optimization:
+  n_points: 8000           # Initial number of points
+  batch: 3                 # Batch size for camera sampling/rendering
+
+  train_res:
+    - 2048
+    - 2048
+  display_res:
+    - 512
+    - 512
+  
+  camera_radius: 3.0
+  
+  lr_sdf: 0.002           # Learning rate for SDF optimization
+  lr_x_nx3: 0.0003        # Learning rate for points optimization
+  lr_sh: 0.003          # Learning rate for SH coefficients
+
+  scheduler_features:
+    type: "constant" # type of scheduler in "linear", "cosine", "cosine_with_restarts", "polynomial", "constant", "constant_with_warmup", "inverse_sqrt", "cosine_with_min_lr", "warmup_stable_decay", "LambdaLR"
+    warmup_steps: 500
+    num_cycles: 1
+  scheduler_x_nx3:
+    type: "constant" # same
+    warmup_steps: 500
+    num_cycles: 1
+  scheduler_sh:
+    type: "constant" # same
+    warmup_steps: 500
+    num_cycles: 1
+
+  main_stage:
+    accumulation_delaunay: 5  # Number of iterations between two Delaunay triangulations
+    iter: 5000                # Number of iterations for main stage
+    loss:
+      mask_reg: 10.0
+      depth_reg: 250.0
+      normal_reg: 1.0
+      sdf_reg: 1.0
+      ODT_reg: 0.1
+      triangle_angle_fairness_reg: 0.35
+
+  late_stage:
+    iter: 2001               # Number of iterations for late stage
+    loss:
+      mask_reg: 10.0
+      depth_reg: 250.0       
+      normal_reg: 1.0
+      sdf_reg: 1.0  
+
+  resampling:
+    aggregation: "interpolation" # "zero" or "interpolation"
+    sampling_method: "error_density_gt" # "functional_density", "error_density_gt"
+    resampled_points_method: "partial" # "partial", "full" or "percentage"
+    voxel_resolution: 64
+    num_cameras: 100
+    rendering_resolution:
+      - 1024
+      - 1024
+    steps:
+      - iter: 250
+        n_points: 8000
+      - iter: 501
+        n_points: 10000
+      - iter: 750
+        n_points: 12000
+      - iter: 1000
+        n_points: 16000
+      - iter: 1500
+        n_points: 24000
+      - iter: 2000
+        n_points: 32000
+      - iter: 2500
+        n_points: 48000
+      - iter: 3000
+        n_points: 64000
+      - iter: 4000
+        n_points: 64000
+
+
+spherical_harmonics:
+  use: true
+  degree: 1
+
+# iterations for saving parameters
+logs_iter:
+  interactive: 9999  # How often to visualize interactively
+  save_vis: 250     # How often to log results
+  save_model: 9000    # How often to save the model
+  save_mesh: 9000     # How often to save the mesh
+  last_iter: true # will save the model and mesh at the last iteration
+
+# visualization:
+visualization:
+  angle_steps: 10              # Camera angle steps for rotating the mesh during rendering. x steps means it requires x renders to make a full 360.
+  render_final: true       # Whether to render the mesh on a sphere at the end of the optimization
+  nb_lattitudes: 4
+  points_per_latitude: 10
+  final_res:
+    - 2048
+    - 2048
+  last_iter: true # whether to interactively visualize at the last iteration 

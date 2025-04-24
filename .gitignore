@@ -172,3 +172,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+*.ini
+out/
+assets/data/tetweave_evaluation_dataset
