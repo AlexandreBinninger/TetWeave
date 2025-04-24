@@ -117,13 +117,13 @@ def x_abs(points):
 def x_plus_one(points):
     return (points[:, :, :, 0] + 1)**2
 
-def x_constant(points):
+def constant(points):
     return torch.ones_like(points[:, :, :, 0])
 
 def x_squared(points):
     return (points[:, :, :, 0])**2
 
-def y_squared(points):
+def y_cubed(points):
     p = torch.abs((points[:, :, :, 1] - 1.0))**3 + 0.05
     return p
     
@@ -234,7 +234,7 @@ def aggregation(updated_x_nx3, neighbor_active_points_mask, x_nx3, sdf, tets, fe
     
     return x_nx3, sdf, features
 
-def sample_block_functional_density(x_nx3, sdf, tets, kal_mesh, func = y_squared, features = None, aggregation_method="interpolation", resampled_points_method="partial"):
+def sample_block_functional_density(x_nx3, sdf, tets, kal_mesh, func = constant, features = None, aggregation_method="interpolation", resampled_points_method="partial"):
     nb_resampled_points, neighbor_active_points_mask = resample_point_method(sdf, tets, x_nx3, method=resampled_points_method)
     if nb_resampled_points == 0:
         return x_nx3, sdf, features

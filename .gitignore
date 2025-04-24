@@ -176,3 +176,4 @@ cython_debug/
 *.ini
 out/
 assets/data/tetweave_evaluation_dataset
+assets/examples/GOAT_compressed.pt

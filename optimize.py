@@ -360,8 +360,8 @@ class Optimizer:
             gt_buffer = render.render_mesh(self.gt_mesh_kal, camera, self.conf.visualization.final_res, return_types=["normals_face"], white_bg=True)
             gt_image = ((gt_buffer["normals_face"][0].detach().cpu().numpy()+1)/2*255).astype(np.uint8)
             images = [
-                add_text_to_image(gt_image, "ground truth", font_size=40),
-                add_text_to_image(image, f"reconstruction - {i}", font_size=40)]
+                add_text_to_image(gt_image, "ground truth", font_size=self.conf.visualization.final_res[0]//20),
+                add_text_to_image(image, f"reconstruction - {i}", font_size=self.conf.visualization.final_res[0]//20)]
             imageio.imwrite(os.path.join(folder_name, f"iter_{i}.png"), np.concatenate(images, axis=1))
             pbar.update(1)
     
