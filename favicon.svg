@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="490.027" height="490.027"><svg id="SvgjsSvg1001" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.027 490.027">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009248;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        stroke: #1d1d1b;
+        stroke-width: .75px;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #d63517;
+      }
+
+      .cls-3 {
+        fill: #ba9fcb;
+        opacity: .8;
+      }
+
+      .cls-3, .cls-7 {
+        stroke-linejoin: bevel;
+      }
+
+      .cls-4, .cls-5, .cls-7 {
+        fill: none;
+      }
+
+      .cls-5 {
+        stroke-dasharray: 2.001 2.001;
+      }
+
+      .cls-8, .cls-6 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <line class="cls-8" x1="21.79" y1="214.059" x2="468.237" y2="326.266"></line>
+      <g>
+        <line class="cls-4" x1="21.79" y1="214.059" x2="22.76" y2="214.303"></line>
+        <line class="cls-5" x1="24.701" y1="214.791" x2="466.296" y2="325.778"></line>
+        <line class="cls-4" x1="467.267" y1="326.022" x2="468.237" y2="326.266"></line>
+      </g>
+    </g>
+    <polygon class="cls-4" points="468.237 326.266 197.023 22.09 21.79 214.059 69.682 467.937 468.237 326.266"></polygon>
+    <polygon class="cls-3" points="40.417 312.802 256.154 272.962 328.34 169.366 153.172 175.621 40.417 312.802"></polygon>
+    <polygon class="cls-7" points="40.417 312.802 256.154 272.962 328.34 169.366 153.172 175.621 40.417 312.802"></polygon>
+    <line class="cls-6" x1="197.023" y1="22.09" x2="69.682" y2="467.937"></line>
+    <ellipse class="cls-2" cx="21.79" cy="214.059" rx="21.415" ry="21.715"></ellipse>
+    <ellipse class="cls-1" cx="69.682" cy="467.937" rx="21.415" ry="21.715"></ellipse>
+    <ellipse class="cls-1" cx="468.237" cy="326.266" rx="21.415" ry="21.715"></ellipse>
+    <ellipse class="cls-2" cx="197.023" cy="22.09" rx="21.415" ry="21.715"></ellipse>
+  </g>
+  <line class="cls-7" x1="153.172" y1="175.621" x2="256.154" y2="272.962"></line>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: none; } }
+</style></svg>
