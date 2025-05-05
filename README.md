@@ -178,7 +178,9 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 doi={10.1145/3730851},
 journal = {ACM Trans. Graph.},
-month = {7}
+month = {8},
+volume = {44},
+number = {4}
 }
 ```
 
