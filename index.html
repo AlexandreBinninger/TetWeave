@@ -9,8 +9,27 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/TetWeave/apple-touch-icon.png" />
     <link rel="manifest" href="/TetWeave/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="TetWeave is a novel isosurface representation that jointly optimizes a tetrahedral grid and directional distances for gradient-based mesh processing like multi-view 3D reconstruction. It dynamically builds adaptive grids via Delaunay triangulation and uses Marching Tetrahedra to extract intersection-free, watertight, manifold meshes. By resampling high-error regions and promoting fairness, it achieves high-quality results with minimal memory requirements.">
+    <meta property="og:title" content="TetWeave: Isosurface Extraction using On-The-Fly Delaunay Tetrahedral Grids for Gradient-Based Mesh Optimization" />
+    <meta property="og:description"
+      content="TetWeave is a novel isosurface representation that jointly optimizes a tetrahedral grid and directional distances for gradient-based mesh processing like multi-view 3D reconstruction. It dynamically builds adaptive grids via Delaunay triangulation and uses Marching Tetrahedra to extract intersection-free, watertight, and manifold meshes. By resampling high-error regions and promoting fairness, it achieves high-quality results with minimal memory requirements." />
+    <meta property="og:url" content="" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="https://alexandrebinninger.com/TetWeave/media/teaser_1200x630.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="twitter:title" content="TetWeave: Isosurface Extraction using On-The-Fly Delaunay Tetrahedral Grids for Gradient-Based Mesh Optimization">
+    <meta name="twitter:description"
+      content="TetWeave is a novel isosurface representation that jointly optimizes a tetrahedral grid and directional distances for gradient-based mesh processing like multi-view 3D reconstruction. It dynamically builds adaptive grids via Delaunay triangulation and uses Marching Tetrahedra to extract intersection-free, watertight, manifold meshes. By resampling high-error regions and promoting fairness, it achieves high-quality results with minimal memory requirements.">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="https://alexandrebinninger.com/TetWeave/media/teaser_1200x600.png">
+    <meta name="twitter:card" content="TetWeave jointly optimizes a tetrahedral grid and a directional signed distance function used for Marching Tetrahedra. Our method weaves a background grid around the surface, which is regularized to give fair output meshes. The results are compared with semi-adaptive grid methods (top row), which start from a predefined grid. These methods have limited flexibility and their meshing is influenced by the configuration of the predefined grid. They require many more nodes in the background grid because of unused empty space to get a similar level of detail in the output mesh.">
     <title>TetWeave</title>
-    <script type="module" crossorigin src="/TetWeave/assets/index-BO7PcwbJ.js"></script>
+    <script type="module" crossorigin src="/TetWeave/assets/index-BhIuFCau.js"></script>
     <link rel="stylesheet" crossorigin href="/TetWeave/assets/index-6kr37kHm.css">
   </head>
   <body>
