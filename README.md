@@ -3,7 +3,7 @@
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10-or?logo=python&style=plastic" alt="python"></a>
     <a href="https://opensource.org/license/MIT"><img src="https://img.shields.io/badge/license-MIT-yellow?style=plastic" alt="license"></a>
     <a href="https://alexandrebinninger.github.io/TetWeave"><img src="https://img.shields.io/badge/website-Gitpage-blue?style=plastic&logo=github&logoColor=white" alt="website"></a>
-    <a href="https://arxiv.org/abs/TODO" alt ="arXiv"> <img src="https://img.shields.io/badge/arXiv-TODO-b31b1b.svg"/></a>
+    <a href="https://arxiv.org/abs/2505.04590" alt ="arXiv"> <img src="https://img.shields.io/badge/arXiv-2505.04590-b31b1b.svg"/></a>
     <a href="https://doi.org/10.1145/3730851" alt="doi">
     <img src="https://img.shields.io/badge/DOI-10.1145%2F3730851-red?style=plastic&logo=doi&color=red" alt="website"></a>
 </p>
