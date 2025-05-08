@@ -3,16 +3,12 @@
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10-or?logo=python&style=plastic" alt="python"></a>
     <a href="https://opensource.org/license/MIT"><img src="https://img.shields.io/badge/license-MIT-yellow?style=plastic" alt="license"></a>
     <a href="https://alexandrebinninger.github.io/TetWeave"><img src="https://img.shields.io/badge/website-Gitpage-blue?style=plastic&logo=github&logoColor=white" alt="website"></a>
-    <a href="https://arxiv.org/abs/TODO" alt ="arXiv"> <img src="https://img.shields.io/badge/arXiv-TODO-b31b1b.svg"/></a>
+    <a href="https://arxiv.org/abs/2505.04590" alt ="arXiv"> <img src="https://img.shields.io/badge/arXiv-2505.04590-b31b1b.svg"/></a>
     <a href="https://doi.org/10.1145/3730851" alt="doi">
     <img src="https://img.shields.io/badge/DOI-10.1145%2F3730851-red?style=plastic&logo=doi&color=red" alt="website"></a>
 </p>
 
-![TetWeave](./assets/media/teaser.jpg)
 
-<div align="center">
-<p><strong>TetWeave</strong>: Isosurface Extraction using On-The-Fly Delaunay Tetrahedral Grids for Gradient-Based Mesh Optimization</p>
-</div>
 <p align="center">
     <a href="#introduction">Introduction</a> •
     <a href="#installation">Installation</a> •
@@ -22,6 +18,13 @@
     <a href="#acknowledgments">Acknowledgments</a> •
     <a href="#license">License</a>
 </p>
+<div align="center">
+<img src="assets/media/teaser.jpg" alt="TetWeave teaser" width="1024px">
+</div>
+
+<div align="center">
+<p><strong>TetWeave</strong>: Isosurface Extraction using On-The-Fly Delaunay Tetrahedral Grids for Gradient-Based Mesh Optimization</p>
+</div>
 
 <h2 align="center" id="introduction"> Introduction</h2>
 
@@ -175,7 +178,9 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 doi={10.1145/3730851},
 journal = {ACM Trans. Graph.},
-month = {7}
+month = {8},
+volume = {44},
+number = {4}
 }
 ```
 
