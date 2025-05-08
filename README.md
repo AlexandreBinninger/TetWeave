@@ -183,7 +183,7 @@ month = {7}
 <h2 align="center" id="acknowledgments">📢 Acknowledgments</h2>
 <p align="right"><a href="#title"><sup>▴ Back to top</sup></a></p>
 
-We thank the anonymous reviewers for their constructive feedback. This work was supported in part by the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation program (grant agreement No. 101003104, ERC CoG MYCLOTH).
+We thank the anonymous reviewers for their constructive feedback and Marcel Padilla for his careful reading of our manuscript. The open source codebases of FlexiCubes and DMTet have been instrumental in the development of TetWeave. This work was supported in part by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation program (grant agreement No. 101003104, ERC CoG MYCLOTH).
 
 <h2 align="center" id="license">📃 License</h2>
 <p align="right"><a href="#title"><sup>▴ Back to top</sup></a></p>
